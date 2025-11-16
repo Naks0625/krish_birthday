@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #eaf4ff;
+      padding: 50px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Sparkle Animation */
+    @keyframes sparkle {
+      0% { opacity: 0; transform: scale(0.5) translateY(0px); }
+      50% { opacity: 1; transform: scale(1) translateY(-20px); }
+      100% { opacity: 0; transform: scale(0.5) translateY(0px); }
+    }
+
+    .sparkle {
+      position: absolute;
+      color: #a3c9ff;
+      font-size: 24px;
+      animation: sparkle 2s infinite ease-in-out;
+      pointer-events: none;
+    }
+
+    /* Perfect Heart */
+    .heart {
+      font-size: 14px;
+      line-height: 14px;
+      color: #0077ff;
+      white-space: pre;
+      font-weight: bold;
+      margin-bottom: 25px;
+      text-shadow: 0 0 6px #66a3ff;
+    }
+
+    h1 {
+      font-family: "Courier New", cursive;
+      font-size: 42px;
+      color: #004aad;
+      text-shadow: 0 0 10px #9cc9ff;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #005fcc;
+      text-shadow: 0 0 8px #aacfff;
+    }
+
+    /* Cake Image */
+    .cake-img {
+      width: 70%;
+      max-width: 700px;
+      margin-top: 40px;
+      filter: drop-shadow(0 0 20px #66a3ff) drop-shadow(0 0 40px #99c2ff);
+    }
+
+    /* Glowing Page Border */
+    .glow-border {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      box-shadow: inset 0 0 40px #3385ff, inset 0 0 90px #99c2ff;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="glow-border"></div>
+
+  <!-- Sparkles -->
+  <div class="sparkle" style="top: 5%; left: 20%;">✨</div>
+  <div class="sparkle" style="top: 20%; left: 70%; animation-delay: .4s;">✨</div>
+  <div class="sparkle" style="top: 55%; left: 10%; animation-delay: .8s;">✨</div>
+  <div class="sparkle" style="top: 75%; left: 85%; animation-delay: 1.2s;">✨</div>
+  <div class="sparkle" style="top: 45%; left: 45%; animation-delay: 1.6s;">✨</div>
+
+  <h1>Happy Birthday Krish! 🎉</h1>
+  <h2>In advance — only 3 more days to go 💙✨</h2>
+
+  <!-- Public Domain Cake Image -->
+  <img 
+    class="cake-img" 
+    src="https://openclipart.org/image/800px/svg_to_png/33097/birthday-cake.png" 
+    alt="Birthday Cake" />
+
+</body>
+</html>
